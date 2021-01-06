@@ -1,3 +1,4 @@
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: rgb(170, 170, 170);
@@ -6,11 +7,11 @@
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
+  float: left;
   color: #000000;
-  padding: 0.875rem 1rem;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
-  font-size: 1.0625rem;
+  font-size: 0.875rem;
 }
 
 /* Change the color of links on hover */
@@ -25,12 +26,6 @@
   color: white;
 }
 
-.name {
-  width: 16rem;
-  padding-top: 0.5rem;
-  padding-left: 1rem;
-  filter: drop-shadow(1em 1em 4em black);
-}
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -46,13 +41,13 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 5px;
+  width: 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin-bottom: 10px;
 }
 
 .active {
@@ -62,7 +57,7 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 10.5s;
+  -webkit-animation-duration: 15.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -83,21 +78,97 @@ img {vertical-align: middle;}
 }
 
 .logo {
-  width: 15rem;
+  width: 4rem;
   position: absolute;
-  top: 19rem;
-  left: 57rem;
+  top: 5rem;
+  left: 5rem;
 }
 
 .paragraph {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 5rem;
-  width: 30rem;
+  font-size: 2rem;
+  width: 15rem;
   position: absolute;
   color: rgb(255, 255, 255);
-  top: 15rem;
-  left: 75rem;
-  filter: drop-shadow(5px 10px 10px #000000);
+  top: 2.5rem;
+  left: 10rem;
+  filter: drop-shadow(5px 5px 5px #000000);
 }
 
+.heading1 {
+  font-size: 2.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(221, 147, 147);
+  text-align: center;
+  padding: 1rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;  
+}
 
+.describe {
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  margin-top: -2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.heading2 {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(68, 94, 155);
+  text-align: center;
+  padding: 1rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;  
+  margin-bottom: -10px;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-family: monospace;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.team {
+  font-size: 0.95rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  margin-top: -2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.body {
+  background-color: rgb(228, 228, 228);
+}
+
+.content {
+  background-color: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;  
+}
+
+.about {
+  background-color: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.5rem;
+  }
+
+  
