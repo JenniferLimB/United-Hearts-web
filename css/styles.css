@@ -1,13 +1,4 @@
-
-/* Iphone X*/
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-    /* Add a black background color to the top navigation */
+/* Add a black background color to the top navigation */
 .topnav {
   background-color: rgb(170, 170, 170);
   overflow: hidden;
@@ -19,7 +10,7 @@
   color: #000000;
   padding: 0.6rem 0.9rem;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 0.875em;
 }
 
 /* Change the color of links on hover */
@@ -90,10 +81,6 @@ img {vertical-align: middle;}
   position: absolute;
   top: 5rem;
   left: 5rem;
-}
-
-.name {
-  display: none;
 }
 
 .paragraph {
@@ -274,328 +261,52 @@ img {vertical-align: middle;}
 
 .code {
   position: relative;
-  left: 0.5rem;
-  width: 100%;
+  left: 0.4rem;
+  width: 90%;
 }
 
 .bar {
   position: relative;
-  left: 0.5rem;
-  width: 100%;
-}
-
-.number {
-  margin-bottom: 3rem;
-  margin-top: -2rem;
-}
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: rgb(170, 170, 170);
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: right;
-  color: #000000;
-  padding: 0.6rem 0.9rem;
-  text-decoration: none;
-  font-size: 0.875rem;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: rgb(175, 209, 255);
-  color: rgb(0, 0, 0);
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #cc7a7a;
-  color: white;
-}
-
-
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 10000px;
-  position: relative;
-  margin: auto;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 5px;
-  width: 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin-bottom: 10px;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 15.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media all and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-.logo {
-  width: 8rem;
-  position: absolute;
-  top: 7rem;
-  left: 5rem;
-}
-
-.name {
-  display: none;
-}
-
-.paragraph {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 3.5rem;
-  position: absolute;
-  color: rgb(255, 255, 255);
-  top: 5rem;
-  left: 15rem;
-  filter: drop-shadow(5px 5px 5px #000000);
-}
-
-.row {
-  display: flex;
-  padding-bottom: 1rem;
-  margin-right: 0.875rem;
-}
-
-
-.column {
-  flex: 33.33%;
-}
-
-.heading1 {
-  font-size: 2rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(0, 0, 0);
-  background-color: rgb(221, 147, 147);
-  text-align: center;
-  padding: 0.5rem;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;  
-}
-
-.describe {
-  font-size: 1rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
-  margin-top: -2rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-.heading2 {
-  font-size: 1.75rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(255, 255, 255);
-  background-color: rgb(50, 79, 134);
-  text-align: center;
-  padding: 0.5rem;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px; 
-}
-
-.greeting {
-  font-size: 1.5rem;
-  font-family: monospace;
-  margin-left: 1rem;
-  margin-right: 0.5rem;
-}
-
-.team {
-  font-size: 0.8rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-.body {
-  background-color: rgb(228, 228, 228);
-}
-
-.content {
-  background-color: white;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;  
-}
-
-.about {
-  background-color: white;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  text-align: center;
-  font-family: monospace;
-  font-size: 1.5rem;
-  }
-
-.collabs {
-  background-color: white;
-  margin-left: 7rem;
-  margin-right: 7rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  font-family: monospace;
-  font-size: 1.5rem;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  }
-
-.heading3 {
-  font-size: 2rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(255, 255, 255);
-  background-color: rgb(134, 124, 111);
-  text-align: center;
-  padding: 0.5rem;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;  
-}
-    
-.desc {
-  font-size: 1.5rem;
-  padding-bottom: 0.5rem;
-  font-family: monospace;
-  padding:0.5rem;
-  background-color: rgb(226, 204, 194);
-  }
-    
-.summary {
-  font-size: 0.8rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-bottom: 1rem;
-  } 
-
-.heading4 {
-  font-size: 2.5rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: rgb(255, 255, 255);
-  background-color: rgb(55, 98, 70);
-  text-align: center;
-  padding: 0.5rem;
-  position: relative;
-  bottom: 5rem;
-}
-    
-.sosmed {
-  font-size: 3rem;
-  padding-bottom: 0.5rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-top: -1rem;
-  margin-bottom: -3rem;
-  padding:0.5rem;
-  position: relative;
-  bottom: 3rem;
-  color: rgb(0, 0, 0);
-  }
-    
-.ig {
-  font-size: 1.5rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(0, 0, 0);
-  margin-top: 1rem;
-  margin-left: 3rem;
-  margin-right: 10rem;
-  position: relative;
-  bottom: 7rem;
-  left: 5rem;
-  } 
-
-.container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: rgb(156, 192, 151);
-  margin-top: 5rem;
-}
-
-.cap {
-  position: relative;
-  width: 6%;
-  left: 17rem;
-  bottom: 4rem;
-}
-
-.code {
-  position: relative;
-  left: 0.5rem;
-  width: 100%;
-}
-
-.bar {
-  position: relative;
-  left: 0.5rem;
-  width: 60%;
-  margin-top: -1rem;
+  left: 0.4rem;
+  width: 90%;
 }
 
 .bar1 {
   position: relative;
-  left: 0.5rem;
-  width: 68%;
-  margin-top: -2rem;
+  width: 100%;
 }
 
 .number {
   margin-bottom: 3rem;
   margin-top: -2rem;
 }
+
+.members {
+  width: 80%;
 }
+
+
+
+
+
+/* -----------iPhone X-----------*/
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+  .text {
+  display: none;
+  }
+
+  .topnav a {
+    float: right;
+    color: #000000;
+    padding: 0.6rem 0.9rem;
+    text-decoration: none;
+    font-size: 1rem;
+    }
+}
+
