@@ -28,7 +28,9 @@
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
+.mySlides {display: none;
+position: relative;
+}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -76,8 +78,16 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10vh;
+  width: 100vw;
+}
+
 .logo {
-  width: 4rem;
+  width: 10rem;
   position: absolute;
   top: 5rem;
   left: 5rem;
@@ -85,7 +95,7 @@ img {vertical-align: middle;}
 
 .paragraph {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 2rem;
+  font-size: 5rem;
   width: 15rem;
   position: absolute;
   color: rgb(255, 255, 255);
@@ -265,48 +275,11 @@ img {vertical-align: middle;}
   width: 90%;
 }
 
-.bar {
-  position: relative;
-  left: 0.4rem;
-  width: 90%;
-}
-
-.bar1 {
-  position: relative;
-  width: 100%;
-}
-
-.number {
-  margin-bottom: 3rem;
-  margin-top: -2rem;
-}
-
 .members {
   width: 80%;
 }
 
-
-
-
-
-/* -----------iPhone X-----------*/
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-  .text {
+.text {
   display: none;
-  }
-
-  .topnav a {
-    float: right;
-    color: #000000;
-    padding: 0.6rem 0.9rem;
-    text-decoration: none;
-    font-size: 1rem;
-    }
 }
 
